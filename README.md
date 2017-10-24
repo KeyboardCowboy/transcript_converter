@@ -21,3 +21,13 @@ Convert an HTML table into a description list for audio transcriptions.
 - `open` - Will open the resulting file.
 
 If the command runs successfully, a file will be created next to the original with a `.converted` suffix prepended to the extension. 
+
+## Examples
+```bash
+# Generate the file interview.converted.htm.
+$ php TableTrans.php /tmp/interview.htm
+```
+```bash
+# (mac only) Convert the file and save the results to the clipboard. 
+$ php TableTrans.php /tmp/interview.htm print | pbcopy
+```
